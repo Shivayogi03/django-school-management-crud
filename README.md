@@ -44,8 +44,6 @@ project/
 └── README.md
 
 yaml
-Copy code
-
 ---
 
 ## ⚙️ Installation & Setup
@@ -56,35 +54,28 @@ git clone https://github.com/your-username/django-school-management-crud.git
 cd django-school-management-crud
 2️⃣ Create virtual environment
 bash
-Copy code
 python -m venv venv
 3️⃣ Activate virtual environment
 Windows
 
 bash
-Copy code
 venv\Scripts\activate
 Linux / macOS
 
 bash
-Copy code
 source venv/bin/activate
 4️⃣ Install dependencies
 bash
-Copy code
 pip install django
 5️⃣ Run migrations
 bash
-Copy code
 python manage.py makemigrations
 python manage.py migrate
 6️⃣ Create superuser
 bash
-Copy code
 python manage.py createsuperuser
 7️⃣ Run the server
 bash
-Copy code
 python manage.py runserver
 🌐 URLs
 URL	Description
