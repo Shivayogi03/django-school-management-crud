@@ -1,0 +1,26 @@
+
+{% extends 'app/dummy.html' %}
+   
+   {% block title %}
+    <title>School Details</title>
+    {% endblock %}
+
+{% block body_block %}
+    <center>
+        <h1>School Details</h1>
+        <h1>School name is {{RSO.scname}}</h1>
+        <h1>School is Located in {{RSO.scname}}</h1>
+
+        <h1>Details of Students from {{RSO.scname}}</h1>
+        {% for sto in RSO.student.all %}
+            <h1>The Name of the student is {{sto.stname}}</h1>
+            <h1>The Age of the student is {{sto.stage}}</h1>
+            <h1>He belongs to {{sto.scname}} School</h1>
+        {% endfor %}
+
+        <a href="{% url 'schoolupdate' pk=RSO.pk %}" class="btn btn-warning">Update</a>
+
+
+        <a href="{% url 'Deleteschool' pk=SCO.pk %}" class="btn btn-dark">Delete</a>
+    </center>
+{% endblock %}

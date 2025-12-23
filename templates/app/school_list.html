@@ -1,0 +1,19 @@
+
+{% extends 'app/dummy.html' %}
+   
+   {% block title %}
+    <title>School List</title>
+    {% endblock %}
+
+{% block body_block %}
+
+     <center>
+        <h1>School List</h1><br>
+
+        {% for so in QSLSO %}
+
+          <h2> <a href="{{so.pk}}"> {{so.scname}} </a></h2>
+
+        {% endfor %}
+    </center>
+{% endblock %}
